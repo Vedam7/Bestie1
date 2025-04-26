@@ -3,37 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Thankful for You 💖</title>
+  <title>Letter Opening</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="card">
-    <div class="header">
-      <h1>Forever Grateful 💖</h1>
-      <p class="tagline">God took His time to create you.</p>
-    </div>
-
-    <div class="content">
-      <p>
-        Thank you God for making such a beautiful soul — someone who cares, motivates, and lifts others just by being themselves.
-      </p>
-
-      <p>
-        From childhood, through 15 years of journey — even when we lost touch, you were never far from His plan.
-      </p>
-
-      <p>
-        Now, when I needed it most, God reconnected you to my life — to bring back my strength, my consistency, and my smile.
-      </p>
-
-      <p class="highlight">
-        You are not just important — you are a blessing I’ll always be grateful for.
-      </p>
-    </div>
-
-    <div class="footer">
-      <p>— Thankful for God's timing and you 🌟</p>
+  <div class="envelope-container">
+    <div class="envelope">
+      <div class="envelope-front">
+        <p class="envelope-text">Click to open your letter 📨</p>
+      </div>
+      <div class="envelope-back">
+        <p class="envelope-text">This is a special letter just for you!</p>
+      </div>
     </div>
   </div>
+
+  <script>
+    // Open the letter on click
+    document.querySelector('.envelope').addEventListener('click', function () {
+      window.location.href = 'letter-content.html';  // Redirect to the letter page
+    });
+  </script>
 </body>
 </html>
